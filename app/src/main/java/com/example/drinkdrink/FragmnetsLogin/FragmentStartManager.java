@@ -1,4 +1,4 @@
-package com.example.drinkdrink.fragmnetsLogin;
+package com.example.drinkdrink.FragmnetsLogin;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;

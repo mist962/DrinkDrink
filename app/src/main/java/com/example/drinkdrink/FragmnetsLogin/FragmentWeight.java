@@ -1,4 +1,4 @@
-package com.example.drinkdrink.fragmnetsLogin;
+package com.example.drinkdrink.FragmnetsLogin;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,39 +13,38 @@ import com.example.drinkdrink.R;
 
 import java.util.Objects;
 
-public class FragmentHeight extends Fragment {
-
+public class FragmentWeight extends Fragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View fragmentHeight = inflater.inflate(R.layout.fragment_height, container, false);
+        View fragmentWeight = inflater.inflate(R.layout.login_fragment_weight, container, false);
 
-        Button btn = fragmentHeight.findViewById(R.id.button_height_next);
-        NumberPicker numPic = fragmentHeight.findViewById(R.id.numberPicker_height);
-        NumberPicker numPic2 = fragmentHeight.findViewById(R.id.numberPicker_height_sm);
+        Button btn = (Button) fragmentWeight.findViewById(R.id.button_weight_next);
+        NumberPicker numPic = (NumberPicker) fragmentWeight.findViewById(R.id.numberPicker_weight);
+        NumberPicker numPic2 = (NumberPicker) fragmentWeight.findViewById(R.id.numberPicker_weight_kg);
 
-        numPic.setMinValue(140);
+        numPic.setMinValue(40);
         numPic.setMaxValue(220);
         numPic.setWrapSelectorWheel(false);
 
-        String[] nfg = {"СМ"};
+        String[] nfg = {"КГ"};
         numPic2.setDisplayedValues(nfg);
         numPic.setWrapSelectorWheel(false);
 
         numPic.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
             @Override
             public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
-                ((FragmentStartManager) Objects.requireNonNull(getActivity())).setHeight(newVal);
+                ((FragmentStartManager) Objects.requireNonNull(getActivity())).setWeight(newVal);
             }
         });
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((FragmentStartManager) Objects.requireNonNull(getActivity())).onNavigationItemSelected(5);
+                ((FragmentStartManager) Objects.requireNonNull(getActivity())).onNavigationItemSelected(4);
             }
         });
 
-        return fragmentHeight;
+        return fragmentWeight;
     }
 }

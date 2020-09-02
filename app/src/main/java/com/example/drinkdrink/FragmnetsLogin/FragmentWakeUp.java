@@ -1,4 +1,4 @@
-package com.example.drinkdrink.fragmnetsLogin;
+package com.example.drinkdrink.FragmnetsLogin;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -14,24 +14,24 @@ import com.example.drinkdrink.R;
 
 import java.util.Objects;
 
-public class FragmentSleep extends Fragment {
+public class FragmentWakeUp extends Fragment {
 
-    TimePicker timePickerSleep;
+    TimePicker timePickerWakeUp;
     int hourOfDay, minute = 0;
     Button btn;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View fragmentSleep = inflater.inflate(R.layout.fragment_sleep, container, false);
+        View fragmentWakeUp = inflater.inflate(R.layout.login_fragment_wakeup, container, false);
 
-        btn = fragmentSleep.findViewById(R.id.button_sleep_next);
-        timePickerSleep = fragmentSleep.findViewById(R.id.timePickerSleep);
-        timePickerSleep.setIs24HourView(true);
+        btn = fragmentWakeUp.findViewById(R.id.button_wakeup_next);
+        timePickerWakeUp = fragmentWakeUp.findViewById(R.id.timePickerWakeUp);
+        timePickerWakeUp.setIs24HourView(true);
 
         btn.setBackgroundColor(Color.GRAY);
         btn.setEnabled(false);
 
-        timePickerSleep.setOnTimeChangedListener(new TimePicker.OnTimeChangedListener() {
+        timePickerWakeUp.setOnTimeChangedListener(new TimePicker.OnTimeChangedListener() {
             @Override
             public void onTimeChanged(TimePicker view, int hourOfDayA, int minuteA) {
                 hourOfDay = hourOfDayA;
@@ -44,12 +44,12 @@ public class FragmentSleep extends Fragment {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((FragmentStartManager) Objects.requireNonNull(getActivity())).setSleep(hourOfDay, minute);
-                ((FragmentStartManager) Objects.requireNonNull(getActivity())).timerEvening(hourOfDay, minute);
-                ((FragmentStartManager) Objects.requireNonNull(getActivity())).onNavigationItemSelected(7);
+                ((FragmentStartManager) Objects.requireNonNull(getActivity())).setWakeUp(hourOfDay, minute);
+                ((FragmentStartManager) Objects.requireNonNull(getActivity())).timerMorning(hourOfDay, minute);
+                ((FragmentStartManager) Objects.requireNonNull(getActivity())).onNavigationItemSelected(6);
             }
         });
 
-        return fragmentSleep;
+        return fragmentWakeUp;
     }
 }

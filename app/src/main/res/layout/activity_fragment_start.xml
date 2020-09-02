@@ -8,7 +8,7 @@
     android:foregroundGravity="center"
     android:orientation="vertical"
     app:layoutDescription="@xml/activity_fragment_start_scene"
-    tools:context=".fragmnetsLogin.FragmentStartManager">
+    tools:context=".FragmnetsLogin.FragmentStartManager">
 
     <LinearLayout
         android:id="@+id/linearLayout2"

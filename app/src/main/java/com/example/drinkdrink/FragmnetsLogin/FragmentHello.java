@@ -1,4 +1,4 @@
-package com.example.drinkdrink.fragmnetsLogin;
+package com.example.drinkdrink.FragmnetsLogin;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -16,7 +16,7 @@ public class FragmentHello extends Fragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View fragmentHello = inflater.inflate(R.layout.fragment_hello, container, false);
+        View fragmentHello = inflater.inflate(R.layout.login_fragment_hello, container, false);
 
         Button btn = fragmentHello.findViewById(R.id.button_hello_next);
 

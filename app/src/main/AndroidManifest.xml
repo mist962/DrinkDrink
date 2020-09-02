@@ -12,7 +12,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
 
-        <activity android:name=".fragmnetsLogin.FragmentStartManager" />
+        <activity android:name=".FragmnetsLogin.FragmentStartManager" />
 
         <receiver android:name=".AlarmReceiver" />
 

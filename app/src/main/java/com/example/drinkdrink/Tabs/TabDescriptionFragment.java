@@ -47,7 +47,7 @@ public class TabDescriptionFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        final View fragmentTabDescription = inflater.inflate(R.layout.fragment_tab_description, container, false);
+        final View fragmentTabDescription = inflater.inflate(R.layout.tab_fragment_description, container, false);
 
         textBMINum = fragmentTabDescription.findViewById(R.id.textBMINum);
         textWaterNormNum = fragmentTabDescription.findViewById(R.id.textWaterNormNum);

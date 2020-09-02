@@ -1,4 +1,4 @@
-package com.example.drinkdrink.fragmnetsLogin;
+package com.example.drinkdrink.FragmnetsLogin;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -24,7 +24,7 @@ public class FragmentGender extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        final View fragmentGender = inflater.inflate(R.layout.fragment_gender, container, false);
+        final View fragmentGender = inflater.inflate(R.layout.login_fragment_gender, container, false);
 
         btn = fragmentGender.findViewById(R.id.button_gender_next);
         radioGroup = fragmentGender.findViewById(R.id.radioGroup_gender);

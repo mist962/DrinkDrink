@@ -65,7 +65,7 @@ public class TabDrinkFragment extends Fragment implements View.OnClickListener {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        final View fragmentDrink = inflater.inflate(R.layout.fragment_tab_drink, container, false);
+        final View fragmentDrink = inflater.inflate(R.layout.tab_fragment_drink, container, false);
 
         mWaveLoadingView = fragmentDrink.findViewById(R.id.waveLoadingView);
         buttonReset = fragmentDrink.findViewById(R.id.button4);

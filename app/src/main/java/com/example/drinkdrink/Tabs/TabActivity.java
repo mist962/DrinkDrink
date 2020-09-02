@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
-import com.example.drinkdrink.fragmnetsLogin.FragmentStartManager;
+import com.example.drinkdrink.FragmnetsLogin.FragmentStartManager;
 import com.example.drinkdrink.R;
 import com.google.android.material.tabs.TabLayout;
 
@@ -25,7 +25,7 @@ public class TabActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tab);
+        setContentView(R.layout.tab_activity);
 
         sharedPrefs = getSharedPreferences(DataBase, Context.MODE_PRIVATE);
 
@@ -60,9 +60,8 @@ public class TabActivity extends AppCompatActivity {
         PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager());
         pagerAdapter.addFragment(new TabDrinkFragment(), "Drink");
         pagerAdapter.addFragment(new TabDescriptionFragment(), "BMI/Water");
-        pagerAdapter.addFragment(new TabChangeFragment(), "Profile");
+        pagerAdapter.addFragment(new TabSettingsFragment(), "Profile");
         viewPager.setAdapter(pagerAdapter);
     }
-
 }
 
