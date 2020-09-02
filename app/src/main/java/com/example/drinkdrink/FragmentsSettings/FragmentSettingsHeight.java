@@ -17,7 +17,7 @@ public class FragmentSettingsHeight extends DialogFragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View fragmentSettingsHeightView = inflater.inflate(R.layout.settings_fragment_height, container, false);
-
+//
         return fragmentSettingsHeightView;
     }
 }

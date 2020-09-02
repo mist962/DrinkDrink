@@ -17,7 +17,7 @@ public class FragmentSettingsGender extends DialogFragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View fragmentSettingsGenderView = inflater.inflate(R.layout.settings_fragment_gender, container, false);
-
+//
         return fragmentSettingsGenderView;
     }
 }

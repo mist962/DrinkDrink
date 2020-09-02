@@ -17,7 +17,7 @@ public class FragmentSettingsWeight extends DialogFragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View fragmentSettingsWeightView = inflater.inflate(R.layout.settings_fragment_weight, container, false);
-
+//
         return fragmentSettingsWeightView;
     }
 }

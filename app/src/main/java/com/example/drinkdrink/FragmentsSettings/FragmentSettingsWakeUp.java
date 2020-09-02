@@ -17,7 +17,7 @@ public class FragmentSettingsWakeUp extends DialogFragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View fragmentSettingsWakeUpView = inflater.inflate(R.layout.settings_fragment_wake_up, container, false);
-
+//
         return fragmentSettingsWakeUpView;
     }
 }
