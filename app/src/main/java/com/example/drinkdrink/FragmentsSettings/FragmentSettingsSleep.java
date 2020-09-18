@@ -44,7 +44,6 @@ public class FragmentSettingsSleep extends DialogFragment implements View.OnClic
 
         return v;
     }
-
     @Override
     public void onClick(View v) {
 
