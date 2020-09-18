@@ -12,8 +12,6 @@ import androidx.fragment.app.Fragment;
 
 import com.example.drinkdrink.R;
 
-import java.util.Objects;
-
 public class FragmentWakeUp extends Fragment {
 
     TimePicker timePickerWakeUp;
@@ -36,7 +34,7 @@ public class FragmentWakeUp extends Fragment {
             public void onTimeChanged(TimePicker view, int hourOfDayA, int minuteA) {
                 hourOfDay = hourOfDayA;
                 minute = minuteA;
-                btn.setBackgroundColor(Objects.requireNonNull(getActivity()).getColor(R.color.colorBackground));
+                btn.setBackgroundColor(requireActivity().getColor(R.color.colorBackground));
                 btn.setEnabled(true);
             }
         });
@@ -44,9 +42,9 @@ public class FragmentWakeUp extends Fragment {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((FragmentStartManager) Objects.requireNonNull(getActivity())).setWakeUp(hourOfDay, minute);
-                ((FragmentStartManager) Objects.requireNonNull(getActivity())).timerMorning(hourOfDay, minute);
-                ((FragmentStartManager) Objects.requireNonNull(getActivity())).onNavigationItemSelected(6);
+                ((FragmentStartManager) requireActivity()).setWakeUp(hourOfDay, minute);
+                ((FragmentStartManager) requireActivity()).timerMorning(hourOfDay, minute);
+                ((FragmentStartManager) requireActivity()).onNavigationItemSelected(6);
             }
         });
 

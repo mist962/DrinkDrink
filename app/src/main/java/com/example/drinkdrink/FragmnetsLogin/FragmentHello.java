@@ -10,8 +10,6 @@ import androidx.fragment.app.Fragment;
 
 import com.example.drinkdrink.R;
 
-import java.util.Objects;
-
 public class FragmentHello extends Fragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -23,7 +21,7 @@ public class FragmentHello extends Fragment {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((FragmentStartManager) Objects.requireNonNull(getActivity())).onNavigationItemSelected(2);
+                ((FragmentStartManager) requireActivity()).onNavigationItemSelected(2);
             }
         });
 

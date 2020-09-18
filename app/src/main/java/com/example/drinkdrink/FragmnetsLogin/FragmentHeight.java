@@ -11,41 +11,33 @@ import androidx.fragment.app.Fragment;
 
 import com.example.drinkdrink.R;
 
-import java.util.Objects;
-
 public class FragmentHeight extends Fragment {
 
+    NumberPicker numPic, numPic2;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View fragmentHeight = inflater.inflate(R.layout.login_fragment_height, container, false);
+        View v = inflater.inflate(R.layout.login_fragment_height, container, false);
 
-        Button btn = fragmentHeight.findViewById(R.id.button_height_next);
-        NumberPicker numPic = fragmentHeight.findViewById(R.id.numberPicker_height);
-        NumberPicker numPic2 = fragmentHeight.findViewById(R.id.numberPicker_height_sm);
+        Button btn = v.findViewById(R.id.button_height_next);
+        numPic = v.findViewById(R.id.numberPicker_height);
+        numPic2 = v.findViewById(R.id.numberPicker_height_sm);
 
         numPic.setMinValue(140);
         numPic.setMaxValue(220);
         numPic.setWrapSelectorWheel(false);
 
-        String[] nfg = {"СМ"};
-        numPic2.setDisplayedValues(nfg);
-        numPic.setWrapSelectorWheel(false);
-
-        numPic.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
-            @Override
-            public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
-                ((FragmentStartManager) Objects.requireNonNull(getActivity())).setHeight(newVal);
-            }
-        });
+        String[] sm = {getResources().getString(R.string.sm)};
+        numPic2.setDisplayedValues(sm);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((FragmentStartManager) Objects.requireNonNull(getActivity())).onNavigationItemSelected(5);
+                ((FragmentStartManager) requireActivity()).setHeight(numPic.getValue());
+                ((FragmentStartManager) requireActivity()).onNavigationItemSelected(5);
             }
         });
 
-        return fragmentHeight;
+        return v;
     }
 }

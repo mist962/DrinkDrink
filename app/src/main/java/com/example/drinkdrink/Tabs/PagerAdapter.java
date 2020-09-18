@@ -55,3 +55,5 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
         return fragmentTitles.get(position);
     }
 }
+
+

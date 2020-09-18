@@ -21,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:text="Your body mass index (BMI)"
+            android:text="@string/your_body_mass_index_bmi"
             android:textColor="@color/white"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +36,7 @@
             android:background="@drawable/form_button_white"
             android:gravity="center"
             android:maxLength="50"
-            android:text="1234"
+            android:text=""
             android:textColor="@color/colorBackground"
             android:textSize="22sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -49,12 +49,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="15sp"
-            android:textSize="22sp"
             android:background="@drawable/form_button_white"
             android:gravity="center"
             android:padding="6dp"
-            android:text="Normal"
+            android:text=""
             android:textColor="@color/white"
+            android:textSize="22sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textBMINum" />
@@ -92,8 +92,8 @@
             android:layout_marginBottom="15dp"
             android:background="@drawable/form_button_white"
             android:gravity="center"
-            android:maxLength="6"
-            android:text="1234"
+
+            android:text=""
             android:textColor="@color/colorBackground"
             android:textSize="22sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -101,4 +101,5 @@
             app:layout_constraintTop_toBottomOf="@+id/textWaterNorm" />
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

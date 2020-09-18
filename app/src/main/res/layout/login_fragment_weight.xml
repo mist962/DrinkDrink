@@ -35,7 +35,7 @@
             android:layout_height="150dp"
             app:layout_constraintEnd_toStartOf="@+id/numberPicker_weight"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/ic_waterweight"
+            app:srcCompat="@drawable/waterweight"
             tools:ignore="ContentDescription" />
 
         <NumberPicker
@@ -65,7 +65,7 @@
         android:layout_height="45dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/form_button"
-        android:text="@string/next"
+        android:text="@string/next_button"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

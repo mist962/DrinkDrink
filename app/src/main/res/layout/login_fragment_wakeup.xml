@@ -13,7 +13,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_waterwake"
+        app:srcCompat="@drawable/waterwake"
         tools:ignore="ContentDescription" />
 
     <TextView
@@ -22,9 +22,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:fontFamily="sans-serif"
+        android:text="@string/wake_up_time"
         android:textColor="#000000"
         android:textSize="26sp"
-        android:text="Время пробуждения"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageWakeUp" />
@@ -45,7 +45,7 @@
         android:layout_height="45dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/form_button"
-        android:text="@string/next"
+        android:text="@string/next_button"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

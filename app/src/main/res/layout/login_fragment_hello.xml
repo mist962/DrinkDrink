@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_water"
+        app:srcCompat="@drawable/water"
         tools:ignore="ContentDescription" />
 
     <Button
@@ -27,7 +27,7 @@
         android:layout_height="45dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/form_button"
-        android:text="@string/next"
+        android:text="@string/next_button"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +40,7 @@
         android:layout_marginBottom="20dp"
         android:fontFamily="sans-serif"
         android:gravity="center"
-        android:text="Привет! Я Дринк. И я помогу тебе в поддержке водного баланса! Расскажи мне немного о себе."
+        android:text="@string/login_hello"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/imageDrink"

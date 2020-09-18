@@ -13,8 +13,6 @@ import androidx.fragment.app.Fragment;
 
 import com.example.drinkdrink.R;
 
-import java.util.Objects;
-
 public class FragmentGender extends Fragment {
 
     RadioGroup radioGroup;
@@ -37,14 +35,14 @@ public class FragmentGender extends Fragment {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (checkedId == R.id.radioMale) {
-                    btn.setBackgroundColor(Objects.requireNonNull(getActivity()).getColor(R.color.colorBackground));
-                    radioMale.setTextColor(getActivity().getColor(R.color.colorBackground));
-                    radioFemale.setTextColor(getActivity().getColor(R.color.silver));
+                    btn.setBackgroundColor(requireActivity().getColor(R.color.colorBackground));
+                    radioMale.setTextColor(requireActivity().getColor(R.color.colorBackground));
+                    radioFemale.setTextColor(requireActivity().getColor(R.color.silver));
                 }
                 if (checkedId == R.id.radioFemale) {
-                    btn.setBackgroundColor(Objects.requireNonNull(getActivity()).getColor(R.color.colorBackground));
-                    radioFemale.setTextColor(getActivity().getColor(R.color.colorBackground));
-                    radioMale.setTextColor(getActivity().getColor(R.color.silver));
+                    btn.setBackgroundColor(requireActivity().getColor(R.color.colorBackground));
+                    radioFemale.setTextColor(requireActivity().getColor(R.color.colorBackground));
+                    radioMale.setTextColor(requireActivity().getColor(R.color.silver));
                 }
             }
         });
@@ -54,12 +52,12 @@ public class FragmentGender extends Fragment {
             public void onClick(View v) {
                 if (radioMale.isChecked()) {
                     int gender = 1;
-                    ((FragmentStartManager) Objects.requireNonNull(getActivity())).setGender(gender);
-                    ((FragmentStartManager) Objects.requireNonNull(getActivity())).onNavigationItemSelected(3);
+                    ((FragmentStartManager) requireActivity()).setGender(gender);
+                    ((FragmentStartManager) requireActivity()).onNavigationItemSelected(3);
                 } else if (radioFemale.isChecked()) {
                     int gender = 2;
-                    ((FragmentStartManager) Objects.requireNonNull(getActivity())).setGender(gender);
-                    ((FragmentStartManager) Objects.requireNonNull(getActivity())).onNavigationItemSelected(3);
+                    ((FragmentStartManager) requireActivity()).setGender(gender);
+                    ((FragmentStartManager) requireActivity()).onNavigationItemSelected(3);
                 }
             }
         });

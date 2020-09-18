@@ -33,27 +33,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textTimeWakeUp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="77dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/waveLoadingView" />
-
-    <TextView
-        android:id="@+id/textTimeSleep"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textTimeWakeUp" />
-
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -70,7 +49,7 @@
             android:layout_height="match_parent"
             android:background="@color/colorBackground"
             android:gravity="center"
-            android:text="-"
+            android:text="@string/minus"
             android:textColor="@color/white"
             android:textSize="24sp" />
 
@@ -80,7 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:text="TextView"
+            android:text=""
             android:textSize="24sp" />
 
         <TextView
@@ -89,7 +68,7 @@
             android:layout_height="match_parent"
             android:background="@color/colorBackground"
             android:gravity="center"
-            android:text="+"
+            android:text="@string/plus"
             android:textColor="@color/white"
             android:textSize="24sp" />
 

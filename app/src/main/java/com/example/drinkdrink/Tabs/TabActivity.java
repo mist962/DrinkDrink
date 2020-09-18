@@ -9,28 +9,26 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.drinkdrink.DataBase.DataBase;
 import com.example.drinkdrink.FragmnetsLogin.FragmentStartManager;
 import com.example.drinkdrink.R;
 import com.google.android.material.tabs.TabLayout;
 
 public class TabActivity extends AppCompatActivity {
 
-    public static final String DataBase = "DataBase";
-    public static final String isInitKey = "isInitKey";
     Toolbar toolbar;
     TabLayout tabLayout;
     ViewPager viewPager;
-    SharedPreferences sharedPrefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tab_activity);
 
-        sharedPrefs = getSharedPreferences(DataBase, Context.MODE_PRIVATE);
+        DataBase dataBase = new DataBase(getApplicationContext());
 
         // При каждом старте проверяем ключ isInitKey (true или false)
-        if (sharedPrefs.getBoolean(isInitKey, true)) {
+        if (dataBase.getIsInit()) {
             Intent intentFirstOpen = new Intent(TabActivity.this, FragmentStartManager.class);
             startActivity(intentFirstOpen);
         }

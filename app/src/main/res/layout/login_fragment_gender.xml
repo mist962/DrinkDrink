@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center">
@@ -27,7 +26,7 @@
         android:layout_marginBottom="20dp"
         android:background="@drawable/form_button"
         android:gravity="center"
-        android:text="@string/next"
+        android:text="@string/next_button"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,7 +51,7 @@
             android:button="@null"
             android:drawableTop="@drawable/radio_selector_man"
             android:gravity="center"
-            android:text="Male"
+            android:text="@string/male"
             android:textColor="@color/silver"
             android:textSize="24sp" />
 
@@ -64,12 +63,11 @@
             android:button="@null"
             android:drawableTop="@drawable/radio_selector_girl"
             android:gravity="center"
-            android:text="Female"
+            android:text="@string/female"
             android:textAlignment="center"
             android:textColor="@color/silver"
             android:textSize="24sp" />
 
     </RadioGroup>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

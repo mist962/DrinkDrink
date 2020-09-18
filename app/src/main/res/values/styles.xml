@@ -1,7 +1,5 @@
 <resources>
 
-
-
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -36,6 +34,5 @@
         <item name="tabPaddingEnd">8dp</item>
         <item name="tabSelectedTextColor">@color/white</item>
     </style>
-
 
 </resources>

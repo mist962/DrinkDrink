@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_watersleap"
+        app:srcCompat="@drawable/watersleap"
         tools:ignore="ContentDescription" />
 
     <TextView
@@ -25,7 +25,7 @@
         android:fontFamily="sans-serif"
         android:textColor="#000000"
         android:textSize="26sp"
-        android:text="Время сна"
+        android:text="@string/sleep_start_time"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageSleep" />
@@ -46,7 +46,7 @@
         android:layout_height="45dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/form_button"
-        android:text="@string/next"
+        android:text="@string/next_button"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

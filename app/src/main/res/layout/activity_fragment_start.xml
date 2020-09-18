@@ -27,7 +27,7 @@
             android:layout_height="40dp"
             android:layout_margin="1dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_kubgray"
+            app:srcCompat="@drawable/kubhellowith"
             tools:ignore="ContentDescription" />
 
         <ImageView
@@ -63,7 +63,7 @@
             android:layout_height="40dp"
             android:layout_margin="1dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_kubgray"
+            app:srcCompat="@drawable/kubgendergray"
             tools:ignore="ContentDescription" />
 
         <ImageView
@@ -135,7 +135,7 @@
             android:layout_height="40dp"
             android:layout_margin="1dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_kubgray"
+            app:srcCompat="@drawable/kubheightgray"
             tools:ignore="ContentDescription" />
 
         <ImageView
@@ -220,6 +220,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linearLayout2" />
-
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
